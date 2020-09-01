@@ -11,132 +11,142 @@
 
 <body>
     <header class="header">
+        <div class="container">
             <figure class="logo">
-                <img src="images/logo.png" alt="Logo de http://hittwar.com" height="70px"> 
+                <img src="images/logo.png" alt="Logo de http://hittwar.com" height="60px"> 
             </figure>
             <nav class="menu">
                 <ul></ul>
                 <ol>
                     <li>
-                        <a class="link" href="#portfolio">Portafolio</a>
+                        <a class="link" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a class="link" href="#eventos">Experiencia</a>
+                        <a class="link" href="#eventos">Experience</a>
                     </li>
                     <li>
-                        <a class="link" href="#contacto">Trabajemos juntos</a>
+                        <a class="link" href="#contacto">Work Together</a>
                     </li>
                 </ol>
             </nav>                
+        </div>
     </header>
 
     <section class="hero">
-        <h1>
-            Hola Soy <strong> Jorge Polanco </strong> <br> desarrollador django python </br>pasion por machine learning
-        </h1>
-        <!-- <img src="images/hero.jpg" width="500" height="300" alt="Imagen principal"> -->
+        <div class="container">
+            <h1>
+                I'm a<strong> back-end </strong>developer <br> with skills in <strong> python </strong> </br>passionate about data and ML,</br>
+                working in supply chain </br>as a <strong>solutions architect</strong>
+            </h1>
+            <!-- <img class="hero-image" src="images/hero.jpg" width="450" height="300" alt="Imagen principal"> -->
+        </div>
     </section>
 
-    <section id="portfolio" class="portfolio">
-        <h2>Portafolio (Proyectos Destacados)</h2>
-        <article class="project">
-            <div class="project-details">
-                <h3 class="project-title">Platzi Video</h3>
-                <h6 class="project-course">React Native / React</h6>
-                <p class="project-date"><small><strong>Fecha:</strong> 01/07/2020</small></p>
-                <p class="project-url"><small><strong>Puedes verlo en:</strong>www.supplyreaktive.com</small></p>
-                <p class="project-description">Platzi video fue el resultado de 3 meses de trabajo para crear
-                    la mejor app para enseñar Django.
-                </p>
-                
-            </div>
-            <figure class="project-imageContainer">
-                <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="proyecto">
-            </figure>
-        </article>
-
-        <article class="project">
-            <div class="project-details">
-                <h3 class="project-title">Platzi Video</h3>
-                <h6 class="project-course">React Native / React</h6>
-                <p class="project-date"><small><strong>Fecha:</strong> 01/07/2020</small></p>
-                <p class="project-url"><small><strong>Puedes verlo en:</strong>www.supplyreaktive.com</small></p>
-                <p class="project-description">Platzi video fue el resultado de 3 meses de trabajo para crear
-                    la mejor app para enseñar Django.
-                </p>
-                
-            </div>
-            <figure class="project-imageContainer">
-                <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="proyecto">
-            </figure>
-        </article>
+    <div class="container">
+        <h2 class="event-list-title">Portfolio</h2>
+    </div>
+    
+    <section id="portfolio" class="event-list">
+        <div class="container">
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/mocanexion2.jpg" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">MocaNexion 2</h3>
+                    <p class="event-description">Project created in Python, based on the original MocaNexion project by Nick Saway. 
+                    </br> Mocanexion2 allows connecting through Python to the MOCA service of Blue Yonder's WMS, 
+                        opening the doors to the creation of external functionalities.</p>
+                    <a class="event-url" href="https://github.com/Hittwar/mocanexion2" target="_blank">repository</a>
+                    <a class="event-url" href="https://pypi.org/project/mocanexion2/" target="_blank">Library</a>
+                </div>    
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzigram.jpg" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">PlatziGram</h3>
+                    <p class="event-description"> </br> Django project where the basic concepts of the respective framework are applied, imitating the functionalities of Instagram, created during the Django course given by Platzi.</p>
+                    </br>
+                    <a class="event-url" href="https://github.com/Hittwar/django_prj_concepts" target="_blank">repository</a>
+                </div>    
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/todolist.jpg" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">ToDo List</h3>
+                    <p class="event-description"> </br>Project carried out in Flask during Platzi's course, this project allows us to create a list of pending tasks that can be updated to know the respective status.</p>
+                    </br>
+                    <a class="event-url" href="https://github.com/Hittwar/todo_list_flask" target="_blank">repository</a>
+                </div>    
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/jupyter.jpg" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">ETL with Jupyter Notebooks </br>WMS Pandas</h3>
+                    <p class="event-description">This repository contains a series of Jupiter Notebooks with the methods of connection to databases, for the extraction, transformation and loading of data from a DB to a new DB scheme.</p>
+                    <a class="event-url" href="https://github.com/Hittwar/WMSPandas" target="_blank">repository</a>
+                </div>    
+            </article>
+        </div>
     </section>
 
-    <h2 class="event-list-title">Más sobre mi experiencia</h2>
-    <section id="eventos" class="event-list">
-        <article class="event">
-            <figure class="event-imageContainer">
-                <img class="event-image" src="images/platzi-conf.jpg" width="500" />
-            </figure>
-            <div class="event-detail">
-                <h3 class="event-title">PlatziConf Mex 2020</h3>
-                <p class="event-description">El evento mas importante para el aprendizaje</p>
-                <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">ver platica</a>
-            </div>    
-        </article>
-        <article class="event">
-            <figure class="event-imageContainer">
-                <img class="event-image" src="images/platzi-conf.jpg" width="500" />
-            </figure>
-            <div class="event-detail">
-                <h3 class="event-title">PlatziConf Mex 2020</h3>
-                <p class="event-description">El evento mas importante para el aprendizaje</p>
-                <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">ver platica</a>
-            </div>    
-        </article>
-        <article class="event">
-            <figure class="event-imageContainer">
-                <img class="event-image" src="images/platzi-conf.jpg" width="500" />
-            </figure>
-            <div class="event-detail">
-                <h3 class="event-title">PlatziConf Mex 2020</h3>
-                <p class="event-description">El evento mas importante para el aprendizaje</p>
-                <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">ver platica</a>
-            </div>    
-        </article>
-        <article class="event">
-            <figure class="event-imageContainer">
-                <img class="event-image" src="images/platzi-conf.jpg" width="500" />
-            </figure>
-            <div class="event-detail">
-                <h3 class="event-title">PlatziConf Mex 2020</h3>
-                <p class="event-description">El evento mas importante para el aprendizaje</p>
-                <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">ver platica</a>
-            </div>    
-        </article>
+    <section id="eventos" class="portfolio">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Netlogistik</h3>
+                    <h6 class="project-course">supply chain solutions architect</h6>
+                    <p class="project-date"><small><strong>Technologies:</strong> WMS / TPB / Moca / Python / SQL Server / Oracle</small></p>
+                    <p class="project-description">Responsible for the technical implementation of a project which may include the design and development of customizations around WMS (JDA/RedPrairie), designing and implementing interfaces to customer enterprise applications, documentation and implementation of customer approved solutions.
+                    </p>
+                    
+                </div>
+                <!-- <figure class="project-imageContainer">
+                    <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="proyecto">
+                </figure> -->
+            </article>    
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">ToolsGroup</h3>
+                    <h6 class="project-course">business intelligence specialist</h6>
+                    <p class="project-date"><small><strong>Technologies:</strong> Board / Power BI / SQL Server</small></p>
+                    <p class="project-description">Responsible for the development and deployment of Business Analytics solutions based on the BOARD or Power B technology, for Sales & Operations Planning / Supply Chain Management.
+                    </p>
+                    
+                </div>
+                <!-- <figure class="project-imageContainer">
+                    <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="proyecto">
+                </figure> -->
+            </article>
+        </div>
     </section>
+    
 
     <section id="contacto" class="contact">
-        <form action="/suscripcion/" class="form-email">
-            <h3>¿Creramos algo juntos?</h3>
-            <input type="text" placeholder="Déjame tu email" id="email">
-            <button>Enviar</button>
-        </form>
-        <div class="social">
-            <a href="https://www.linkedin.com/in/jovez/" class="social-link linkedin"></a>
-            <a href="https://github.com/Hittwar" class="social-link github"></a>
+        <div class="container">
+            <!-- <form action="/suscripcion/" class="form-email"> -->
+                <!-- <input type="text" placeholder="Déjame tu email" id="email">
+                <button>Enviar</button> -->
+            <!-- </form> -->
+            <div class="social">
+                <a href="https://www.linkedin.com/in/jovez/" class="social-link linkedin"></a>
+                <a href="https://github.com/Hittwar" class="social-link github"></a>
+            </div>
         </div>
     </section>
 
-
     <footer class="footer">
-        <div>
-            <p>Portfolio Jorge Polanco 2020 <img src="./images/platzi.png" alt="test" width="80"></p>
-        </div>
-        <div>
-            <p>
-                Designed with <\3 by
-            </p>
+        <div class="container">
+                <p>
+                    Portfolio 2020 - @hittwar
+                </p>
         </div>
     </footer>
 

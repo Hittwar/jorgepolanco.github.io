@@ -6,7 +6,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fjalla One', sans-serif;
     font-weight: normal;
-    /* font-style: italic; */
 } 
 
 ol,
@@ -29,11 +28,12 @@ h1 {
 }
 
 h1 strong {
-    color:#026fff;
+    color:#F4E285;
+    text-transform: capitalize;
 }
 
 h2 {
-    color: #026fff;
+    color: #BC4B51;
     text-transform: uppercase;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
@@ -41,28 +41,32 @@ h2 {
     margin-bottom: 40px;
 }
 .hero {
-    height: 300px;
-    background-image: url('../images/hero.jpg');
+    height: 450px;
+    /* background-image: url('../images/hero.jpg'); */
     background-color: #1b2127;
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
+    /* background-size: 500px 300px; */
+    /* background-repeat: no-repeat;
+    background-position-x: right; */
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    justify-content: center;
+    text-align: center;
 }
 
+.hero-image {
+    object-fit: cover;
+}
 .portfolio {
-    background: #fafafa;
+    background: #ffffff;
     padding: 20px;
 }
 
 .project {
-    border: solid 1px gray;
+    /* border: solid 1px gray; */
     border-radius: 10px;
     margin-bottom: 15px;
     padding: 20px;
-    background: white;
+    background: #fafafa;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -75,8 +79,14 @@ h2 {
     margin: 10px 0;
 }
 
-.project-description {
+.project-course {
+    text-transform: capitalize;
     font-size: 20px;
+    color: #BC4B51;
+}
+
+.project-description {
+    font-size: 15px;
 }
 
 .project strong {
@@ -122,7 +132,7 @@ h2 {
 }
 
 .header a {
-    color: white;
+    color: #BC4B51;
     text-decoration: none;
     height: inherit;
     display: flex;
@@ -135,16 +145,8 @@ h2 {
       background-color: #1b2127;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
   }
-
-.footer img {
-    vertical-align: middle;
-}
-
-.footer a {
-    color: white;
-}
 
 .event-list-title {
     margin-left: 20px;
@@ -183,7 +185,7 @@ h2 {
 }
 
 .event-description {
-    text-align: left;
+    text-align: center;
 }
 
 .event-url {
@@ -198,13 +200,14 @@ h2 {
 .contact {
     background-color: #056fff;
     color: white;
-    height: 150px;
+    height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .social {
+    display: inline-block;
 }
 
 .social-link {
@@ -219,7 +222,7 @@ h2 {
   background-image: url('../images/github.svg');
 }
 .social-link.linkedin {
-  background-image: url('../images/instagram.svg');
+  background-image: url('../images/linkedin.svg');
 }
 .form-email input {
     border-color: gray;
@@ -248,7 +251,6 @@ h2 {
   }
   
   .container {
-    /* border: 1px solid red; */
     width: 1000px;
     margin: 0 auto;
     display: inherit;
